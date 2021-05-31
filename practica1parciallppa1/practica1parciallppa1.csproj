@@ -107,7 +107,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\logo.jpg" />
+    <Content Include="Content\logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

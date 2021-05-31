@@ -6,42 +6,45 @@
     <link href="~/Content/site.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="contenedor">
-        <div id="cabecera">
-            <div id="logo">
-                <h1></h1>
-            </div>
-            <div id="buscador">
-                <form action="#" method="post">
-                    Buscar &nbsp;
-                    <input name="busqueda" type="text" />
-                </form>
-            </div>
-            <div class="clear">
-            </div>
+<div id="contenedor">
+    <header id="cabecera">
+        <div id="logo">
+            <h1></h1>
         </div>
-        <div id="menu">
-            <ul id="menu_principal">
-                <li> <a href="@Url.Action("Index", "Home")">Home</a> </li>
-                <li>
-                    <a href="@Url.Action("Index", "Producto")">Categorias</a>
-                </li>
-      
-            </ul>
+        <div id="buscador">
+            <form action="#" method="post">
+                Buscar &nbsp;
+                <input name="busqueda" type="text" />
+            </form>
         </div>
-        <div id="contenido">
-            <div id="principal">
-                @RenderBody()
-            </div>
-            <div id="secundario">
-                <h2> Opciones secundarias</h2>
-            </div>
+        <div class="clear">
         </div>
-        <div id="pie">
-            <p> Datos de la WebSite - 2021</p>
-        </div>
+    </header>
+    <nav id="menu">
+        <ul id="menu_principal">
+            <li> <a href="@Url.Action("Index", "Home")">Home</a> </li>
+            <li>
+                <a href="@Url.Action("Index", "Producto")">Productos</a>
+            </li>
 
-    </div>
+        </ul>
+    </nav>
+    <section id="contenido">
+        <article id="principal">
+
+            @RenderBody()
+        </article>
+
+        <aside id="secundario">
+            <h2> Opciones secundarias</h2>
+        </aside>
+    </section>
+
+    <footer id="pie">
+        <p> Datos de la WebSite - 2021</p>
+    </footer>
+
+</div>
 
 </body>
 </html>

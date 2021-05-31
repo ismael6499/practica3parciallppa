@@ -16,7 +16,6 @@ namespace practica1parciallppa1.Controllers
         public ActionResult Index()
         {
             var lista = productoBiz.Listar();
-           
             return View(lista);
         }
 
